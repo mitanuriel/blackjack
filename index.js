@@ -43,14 +43,19 @@ function renderGame() {
     }
     
     sumEl.textContent = "Sum: " + sum
+    let winAnimationEl = document.getElementById("win-animation")
+
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
+        winAnimationEl.style.display = "none"
     } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
+        winAnimationEl.style.display = "block"
     } else {
         message = "You're out of the game!"
         isAlive = false
+        winAnimationEl.style.display = "none"
     }
     messageEl.textContent = message
 }

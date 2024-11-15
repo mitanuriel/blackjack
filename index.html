@@ -7,10 +7,15 @@
         <p id="message-el">Want to play a round?</p>
         <p id="cards-el">Cards:</p>
         <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
+        <div class="btn-container">
+             <button onclick="startGame()">START GAME</button>
+            <button onclick="newCard()">NEW CARD</button>
+        </div>
         <p id="player-el"></p>
-        
+
+        <img id="win-animation" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWZ1aTZnc3g5eWppYWhidjM3aGI0cTVrNTI2dGNvem5xOTNlM3BhOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6vXWVf9yulY9g3O8/giphy.gif"
+        alt="You win!" style="display: none;">
+
         <script src="index.js"></script>
     </body>
 </html>
